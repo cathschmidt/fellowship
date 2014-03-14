@@ -2,6 +2,33 @@
 <head>
 	<title>DO Summer Fellowship</title>
 
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+	<script>
+
+	$(document).ready( function() {
+
+		$(document).scroll(function() {
+
+			var scrollTop = $(document).scrollTop();
+			var h1 = (scrollTop * .1);
+			var h2 = (scrollTop * -2);
+			var h3 = (scrollTop * -.2) + 5;
+			var div = (scrollTop * -.5);
+
+
+			//$("h1").css("font-size", h1 + "px");
+			$("h2").css("margin-top", h2 + "px");
+			$("img").css("-webkit-transform", "skew(" + h3 + "deg," + div + "deg)");
+			$("div").css("margin-bottom", div + "px");
+
+		});
+
+
+	 });
+
+	</script>
+
 	<style>
 		@font-face {
 			font-family: "Apercu Mono";
@@ -22,6 +49,13 @@
 			color: #1a1a1a;
 			font-family: "Apercu Mono";
 			background: floralwhite;
+			width: 95%;
+			margin-left: auto;
+			margin-right: auto;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			font-weight: normal;
+
 		}
 
 		h1, h2, section {
@@ -32,6 +66,7 @@
 			font-size: 500%;
 			color: red;
 			z-index: 10;
+			text-shadow: 2px 2px 0px floralwhite;
 		}
 
 		sup { /* superscript!! */
@@ -67,11 +102,12 @@
 		}
 
 		img {
-			-webkit-transform: rotate(80deg);
-			-webkit-transform: skew(20, 40deg);
-			width: 80%;
+			width: 50%;
 			height: auto;
 			z-index: -5;
+			position: fixed;
+			top: 30%;
+			left: 30%;
 		}
 
 		
