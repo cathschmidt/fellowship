@@ -13,7 +13,7 @@
 			var scrollTop = $(document).scrollTop();
 			var h1 = (scrollTop * .1);
 			var h2 = (scrollTop * -2);
-			var h3 = (scrollTop * -.2) + 5;
+			var h3 = (scrollTop * -.2) + 15;
 			var div = (scrollTop * -.5);
 
 
@@ -55,23 +55,30 @@
 			overflow-x: hidden;
 			overflow-y: scroll;
 			font-weight: normal;
+			text-shadow: 1px 1px 0px floralwhite;
 
 		}
 
 		h1, h2, section {
 			font-family: "Archive Mono";
+			font-weight: normal;
 		}
 
 		h1 {
 			font-size: 500%;
+			width: 50%;
+			margin-left: 10%;
+			text-align: center;
 			color: red;
 			z-index: 10;
-			text-shadow: 2px 2px 0px floralwhite;
+			float: left;
 		}
 
 		sup { /* superscript!! */
 			color: blue;
 			cursor: pointer;
+		} sup a {
+			text-decoration: none;
 		}
 
 		p {
@@ -117,43 +124,43 @@
 <body>
 
 	<img src="sign.png">
-	<h1>The Design Office<sup>1</sup> Summer Fellowship<sup>2</sup>: Space<sup>3</sup>, access to people<sup>4</sup>, books<sup>5</sup>, equipment<sup>6</sup>, and ideas<sup>7</sup></h1>
+	<h1>The Design Office<sup><a href="#one">1</a></sup> Summer Fellowship<sup><a href="#two">2</a></sup>: Space<sup><a href="#three">3</a></sup>, access to people<sup><a href="#four">4</a></sup>, books<sup><a href="#five">5</a></sup>, equipment<sup><a href="#six">6</a></sup>, and ideas<sup><a href="#seven">7</a></sup></h1>
 
-	<article>
+	<article id="one">
 		<h2>1</h2>
 		<p>Founded in 2007, The Design Office is a place that supports independent practioners. Members manage their own practice, while inevitably partnering for larger commissions, grants, and other self-initiated projects.</p>
 	</article>
 
-	<article>
+	<article id="two">
 		<h2>2</h2>
 		<p>The fellowship is meant for recent graduates (Masters or Bachelors) interested in pursuing independent practice.</p>
 		<p>Fellows work independently.</p>
 		<p>Paid commissions or projects may arise during the fellowship, but applicants are expected to have their own projects or project ideas as a basis for the fellowship.</p>
 	</article>
 
-	<article>
+	<article id="three">
 		<h2>3</h2>
 		<p>3,000 sq/ft in Downtown Providence.</p>
 		<p><a href="http://thedesignoffice.org/place">http://thedesignoffice.org/place</a></p>
 	</article>
 
-	<article>
+	<article id="four">
 		<h2>4</h2>
 		<p>Do your own work alongside of 17 mid-career designers, programmers, and artists. In addition to years of thriving professiona practice, many members are professors and hold advanced degrees from Stanford, Yale, RISD, &amp; CCA.</p>
 		<p><a href="http://thedesignoffice.org/people">http://thedesignoffice.org/people</a></p>
 	</article>
 
-	<article>
+	<article id="five">
 		<h2>5</h2>
 		<p>We got a lotta books, like a lot, &amp; they're all good.</p>
 	</article>
 
-	<article>
+	<article id="six">
 		<h2>6</h2>
 		<p>We got printers, scanners, and some other cool stuff.</p>
 	</article>
 
-	<article>
+	<article id="seven">
 		<h2>7</h2>
 		<p>Everybody here is pretty smart so maybe it will rub off on you.</p>
 	</article>
