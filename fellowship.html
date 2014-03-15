@@ -19,27 +19,31 @@
 			$("img").css("-webkit-transform", "skew(" + h3 + "deg," + div + "deg)");
 
 		});
+
+		function highlight(id){
+			$(id).css("background-color", "yellow");
+		}
 		
 		$("#sup1").click(function(){
-				$("#one").css("border", "1px solid tomato");
+				highlight("#one");
 			});
 		$("#sup2").click(function(){
-				$("#two").css("border", "1px solid tomato");
+				highlight("#two");
 			});
 		$("#sup3").click(function(){
-				$("#three").css("border", "1px solid tomato");
+				highlight("#three");
 			});
 		$("#sup4").click(function(){
-				$("#four").css("border", "1px solid tomato");
+				highlight("#four");
 			});
 		$("#sup5").click(function(){
-				$("#five").css("border", "1px solid tomato");
+				highlight("#five");
 			});
 		$("#sup6").click(function(){
-				$("#six").css("border", "1px solid tomato");
+				highlight("#six");
 			});
 		$("#sup7").click(function(){
-				$("#seven").css("border", "1px solid tomato");
+				highlight("#seven");
 			});
 
 
@@ -86,15 +90,19 @@
 		body {
 			color: #1a1a1a;
 			font-family: "Apercu Mono";
-			background: floralwhite;
+			background: white;
 			width: 95%;
 			margin-left: auto;
 			margin-right: auto;
 			overflow-x: hidden;
 			overflow-y: scroll;
 			font-weight: normal;
-			text-shadow: 1px 1px 0px floralwhite;
+			text-shadow: 1px 1px 0px white;
 
+		}
+
+		a:visited {
+			color: blue;
 		}
 
 		h1, h2, section {
@@ -103,9 +111,9 @@
 		}
 
 		h1 {
-			font-size: 500%;
+			margin-top: 15%;
+			font-size: 450%;
 			width: 50%;
-			margin-left: 10%;
 			text-align: center;
 			color: red;
 			z-index: 10;
@@ -120,7 +128,7 @@
 		}
 
 		p {
-			font-size: 100%;
+			font-size: 80%;
 			margin-top: 5%;
 			margin-bottom:5%;
 		}
@@ -143,8 +151,13 @@
 			display: block;
 			width: 20%;
 			height: auto;
-			margin: 5%;
+			margin: 2%;
 			float: left;
+			transition: all 1s;
+			-webkit-transition: all 1s;
+			-moz-transition: all 1s;
+		} article:nth-child(2n) {
+			margin-top: 10%;
 		}
 
 		img {
@@ -154,6 +167,7 @@
 			position: fixed;
 			top: 30%;
 			left: 30%;
+			opacity: .7;
 		}
 
 		
@@ -180,13 +194,13 @@
 	<article id="three">
 		<h2>3</h2>
 		<p>3,000 sq/ft in Downtown Providence.</p>
-		<p><a href="http://thedesignoffice.org/place">http://thedesignoffice.org/place</a></p>
+		<p><a href="http://thedesignoffice.org/place">thedesignoffice.org/place</a></p>
 	</article>
 
 	<article id="four">
 		<h2>4</h2>
 		<p>Do your own work alongside of 17 mid-career designers, programmers, and artists. In addition to years of thriving professiona practice, many members are professors and hold advanced degrees from Stanford, Yale, RISD, &amp; CCA.</p>
-		<p><a href="http://thedesignoffice.org/people">http://thedesignoffice.org/people</a></p>
+		<p><a href="http://thedesignoffice.org/people">thedesignoffice.org/people</a></p>
 	</article>
 
 	<article id="five">
