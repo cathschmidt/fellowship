@@ -16,14 +16,52 @@
 			var h3 = (scrollTop * -.2) + 15;
 			var div = (scrollTop * -.5);
 
-
-			//$("h1").css("font-size", h1 + "px");
-			$("h2").css("margin-top", h2 + "px");
 			$("img").css("-webkit-transform", "skew(" + h3 + "deg," + div + "deg)");
-			$("div").css("margin-bottom", div + "px");
 
 		});
+		
+		$("#sup1").click(function(){
+				$("#one").css("border", "1px solid tomato");
+			});
+		$("#sup2").click(function(){
+				$("#two").css("border", "1px solid tomato");
+			});
+		$("#sup3").click(function(){
+				$("#three").css("border", "1px solid tomato");
+			});
+		$("#sup4").click(function(){
+				$("#four").css("border", "1px solid tomato");
+			});
+		$("#sup5").click(function(){
+				$("#five").css("border", "1px solid tomato");
+			});
+		$("#sup6").click(function(){
+				$("#six").css("border", "1px solid tomato");
+			});
+		$("#sup7").click(function(){
+				$("#seven").css("border", "1px solid tomato");
+			});
 
+
+		/* function box(key, value) {
+			$(key).onClick(function(){
+				$(value).css("border", "1px solid tomato");
+			});
+		}		
+
+		var links = [
+			{sup: "#sup1", number: "#one"},
+			{sup: "#sup2", number: "#two"},
+			{sup: "#sup3", number: "#three"},
+			{sup: "#sup4", number: "#four"},
+			{sup: "#sup5", number: "#five"},
+			{sup: "#sup6", number: "#six"},
+			{sup: "#sup7", number: "#seven"},
+		];
+
+		for(var i = links.length; i >= links.length; i++) {
+			box(links[i].sup, links[i].number);
+		} */
 
 	 });
 
@@ -83,8 +121,8 @@
 
 		p {
 			font-size: 100%;
-			margin-top: 3%;
-			margin-bottom:3%;
+			margin-top: 5%;
+			margin-bottom:5%;
 		}
 
 		h2 {
@@ -96,8 +134,9 @@
 			display: block;
 			width: 20%;
 			height: auto;
-			margin: 5%;
+			margin: 3%;
 			float: left;
+			padding: 1%;
 		}
 
 		article {
@@ -124,7 +163,7 @@
 <body>
 
 	<img src="sign.png">
-	<h1>The Design Office<sup><a href="#one">1</a></sup> Summer Fellowship<sup><a href="#two">2</a></sup>: Space<sup><a href="#three">3</a></sup>, access to people<sup><a href="#four">4</a></sup>, books<sup><a href="#five">5</a></sup>, equipment<sup><a href="#six">6</a></sup>, and ideas<sup><a href="#seven">7</a></sup></h1>
+	<h1>The Design Office<sup><a id="sup1" href="#one">1</a></sup> Summer Fellowship<sup><a id="sup2" href="#two">2</a></sup>: Space<sup><a id="sup3" href="#three">3</a></sup>, access to people<sup><a id="sup4" href="#four">4</a></sup>, books<sup><a id="sup5" href="#five">5</a></sup>, equipment<sup><a id="sup6" href="#six">6</a></sup>, and ideas<sup><a id="sup7" href="#seven">7</a></sup></h1>
 
 	<article id="one">
 		<h2>1</h2>
